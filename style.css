@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    background-color: #395B64;
+}
+.header{
+  
+   background-color: #A5C9CA;
+    padding-bottom:  2px ;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: flex-end;
+    padding: 0 2rem;
+    
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+.navbar h1{
+    font-size: 3rem;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    padding: 1rem 4rem;
+
+}
+
+.navbar li{
+    transition: all 0.5s ease;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 2rem;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all 0.5s ease;
+
+}
+.navbar li:hover{
+    transform: scale(0.8);
+
+}
+.navbar ul li a:hover{
+    background: #395B64;
+    border-radius: 2rem;
+    color: white;   
+}
+
+.icon{
+    font-size: 3rem;
+    display: none;
+    z-index: 999;
+}
+
+.intro{
+    display: flex;
+    gap: 3rem;
+    height: 90vh;
+    color: white;    flex-wrap: wrap-reverse ;
+    background-color: #395B64;
+}
+.intro-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    padding: 3rem;
+    flex: 1;
+}
+.intro-txt{
+   
+    gap: 5rem;
+}
+.intro-txt h1{
+    font-size: 3rem;
+}
+.intro-txt a{
+    padding: 1.5rem 2rem ;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    align-self: center;
+    border-radius: 3rem;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    letter-spacing: 1px;
+    background-color: #A5C9CA;
+}
+.intro-txt a:hover{
+    transform: scale(0.8);
+    color: white;
+    background: transparent;
+    border-color: #A5C9CA;
+}
+
+
+
+.client-info{
+    margin:3rem 0 ;
+}
+.client-info button ,.client-info a{
+    font-size: 2rem;
+    margin: 1rem;
+    color: black;
+    font-weight: bold;
+    transition: 0.4s;
+   background-color: #A5C9CA ;
+   border-color: #395B64;
+}
+.client-info button:hover ,.client-info a:hover{
+    color: white;
+    transform: scale(0.8);
+    background-color:#395B64;
+    border-color: white;
+}
+.client-info h4{
+    font-size: 2.5rem;
+    color: white;
+}
+.client-info h2{
+    font-size: 3rem;
+    color: white;
+}
+.table *{
+    font-size: 2rem;
+}
+
+table{
+    background-color: white;
+    height: 100vh;
+
+}
+
+.send-money{
+    position: absolute;
+    background-color: white;
+    width: 500px;
+    top: 0;
+    padding: 2rem;
+    transition: all 0.5s linear;
+    transform: translateY(-100%);
+    z-index: 10;
+}
+.send-money >div{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.send-money label{
+    font-size: 2rem;
+}
+.send-money input{
+    margin: 1rem 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid ;
+    font-size: 1.5rem;
+}
+.send-money .buttons{
+float: right;
+}
+.close{
+    padding: 1rem 0 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #395B64;
+    font-size: 2rem;
+    
+}
+
+.send{
+    padding:0.5rem 1rem;
+    text-decoration: none;
+    margin: 0 1rem;
+    background-color: #395B64;
+    font-size: 2rem;
+    color: white;
+    
+}
+.send:hover{
+    color: white;
+}
+
+.history{
+    position: absolute;
+    background-color: white;
+    width: 500px;
+    top: 0;
+    padding: 2rem;
+    transition: all 0.5s linear;
+    z-index: 10; 
+    transform: translateY(-100%);
+    min-height: 250px;
+}
+.history>div{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.history>div span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+ li{
+    font-size: 1.5rem;
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.active{
+    transform: translateY(0);
+}
+
+
+.effect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width:700px) {
+ 
+.icon:nth-last-child(2){
+    display: flex;
+}
+.navbar ul{
+    position: absolute;
+    background-color: aliceblue ;
+    height: 40vh;
+    top: 0;
+    width: 100%;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    z-index: -1;
+   
+}
+.active .navbar ul{  
+transform: translateX(0);
+visibility:visible;
+opacity: 1;
+z-index: 1;
+}
+.active .icon:nth-last-child(1){
+    display: block;
+
+}
+.active .icon:nth-last-child(2){
+    display: none;
+    
+}
+    
+}
+
+@media (max-width:500px) {
+    html{
+        font-size: 55%;
+    }
+    .table{
+        margin: 0 1rem;
+
+    }
+    .table *{
+        font-size: 1.4rem;
+    }
+  .intro-img img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+  }
+}

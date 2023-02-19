@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/26bc67d4b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+                <h1>The Sparks Bank</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Customer Details</a></li>
+                
+            </ul>
+            <i class="fa-solid fa-bars  icon" ></i>
+            <i class="fa-solid fa-xmark icon "></i>
+        </nav>
+    </header>
+
+
+ <!-- Send Money -->
+<div class="effect">
+ <div class="send-money">
+     <div>Send Money</div>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" placeholder="username" id="name">
+        <label for="amt">Amount</label>
+        <input type="number" name="" id="enterAmt" placeholder="amount">
+        <div class="buttons">
+        <button class="close call" >close</button>
+        <a href="#" class="send " id="sendBtn">Send</a>
+        </div>
+    </form>
+
+ </div>
+
+ 
+ <!-- History -->
+
+
+
+ <div class="history" id="history">
+    <div> <span> Transaction History </span> <span style="cursor: pointer; "  class="cancel " >X</span></div>
+    <ul id="history-list">
+  
+    </ul>
+ </div>
+</div>
+    
+
+
+
+<!-- User  -->
+
+
+    <div class="client-info text-center">
+        <h2>Name: Suraj Singh</h2>
+        <h4>Net Bank Balance: ₹<span id="myAccountBalance">100000</span></h4>
+
+        <button class="btn btn-info call "  >Send Money</button>
+        <a class="btn btn-info cancel a" href="#"   >See All Transactions</a>
+    </div>
+
+
+
+
+
+
+    <!-- Table DATA  -->
+
+    
+    <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">SI.NO.</th>
+            <th scope="col">NAME</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Bank Balance(₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>suraj</td>
+            <td >suraj@sparksbank</td>
+            <td id="surajBalance">2000</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>dharamveer</td>
+            <td >dharamveer@sparksbank</td>
+            <td id="dharamveerBalance">34000</td>
+          </tr>
+        
+          <th scope="row">3</th>
+          <td>shubham</td>
+          <td >shubham@sparksbank</td>
+          <td id="shubhamBalance">24000</td>
+        </tr>
+        <th scope="row">4</th>
+        <td>aman</td>
+        <td >aman@sparksbank</td>
+        <td id="amanBalance">30000</td>
+      </tr>
+      <th scope="row">5</th>
+      <td>umesh</td>
+      <td >umesh@sparksbank</td>
+      <td id="umeshBalance">34000</td>
+    </tr>
+    <th scope="row">6</th>
+    <td>prateek</td>
+    <td >prateek@sparksbank</td>
+    <td id="prateekBalance">34000</td>
+  </tr>
+  <th scope="row">7</th>
+  <td>mandal</td>
+  <td >mandal@sparksbank</td>
+  <td id="mandalBalance">14000</td>
+</tr>
+<th scope="row">8</th>
+<td>adarsh</td>
+<td >adarsh@sparksbank</td>
+<td id="adarshBalance">24000</td>
+</tr>
+<th scope="row">9</th>
+<td>lalit</td>
+<td >lalit@sparksbank</td>
+<td id="customerBalance">34000</td>
+</tr>
+<th scope="row">10</th>
+<td>ajay</td>
+<td >ajay@sparksbank</td>
+<td id="ajayBalance">55000</td>
+</tr>
+        </tbody>
+      </table>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
